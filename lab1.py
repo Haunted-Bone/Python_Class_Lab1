@@ -28,12 +28,14 @@ myAge = 32
 myHeight = 6
 myWeight = 165
 
-BMI = ((myWeight/((myHeight*12)+2)**2)*703)
+def bmi_calc(h,w):
+    return (w/((h*12)+2)**2)*703
+
 
 print('The Variable "My Age" is', type(myAge))
 print('The Variable "My Height" is', type(myHeight))
 print('The Variable "My Weight" is', type(myWeight))
-print('My BMI is', BMI)
+print('My BMI is', bmi_calc(6,165))
 
 
 
