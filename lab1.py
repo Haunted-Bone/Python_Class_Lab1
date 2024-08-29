@@ -1,18 +1,19 @@
 import math
 
-radius = 5
-Area =(math.pi*(radius**2))
 
-radius = 3
-Volume = ((4/3)*math.pi*(radius**3))
+def circ_area(r):
+   return math.pi*(r**2)
 
-a = 3
-b = 4
-Hypotenuse = math.sqrt(a**2+b**2)
+def sphere_volume(r):
+    return (4/3)*math.pi*(r**3)
 
-print('The area of the circle is',Area)
-print('The volume of the sphere is', Volume)
-print('The hypotenuse of the triangle is', Hypotenuse)
+def pythagorean_theorem(a,b):
+    return math.sqrt(a**2+b**2)
+
+
+print('The area of the circle is',circ_area(5))
+print('The volume of the sphere is', sphere_volume(3))
+print('The hypotenuse of the triangle is', pythagorean_theorem(3,4))
 
 
 
